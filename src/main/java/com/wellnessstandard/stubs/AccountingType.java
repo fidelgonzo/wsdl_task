@@ -39,7 +39,18 @@ public class AccountingType {
     protected int id;
     protected String nameOfAccountingType;
 
-    /**
+    public AccountingType(String string, int i, String string2) {
+		accountingTypeCode = string;
+		// TODO Auto-generated constructor stub
+		id = i;
+		nameOfAccountingType = string2;
+	}
+
+	public AccountingType() {
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
      * Gets the value of the accountingTypeCode property.
      * 
      * @return

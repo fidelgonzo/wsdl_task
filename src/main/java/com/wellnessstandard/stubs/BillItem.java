@@ -58,7 +58,21 @@ public class BillItem {
     @XmlElement(required = true)
     protected BigDecimal accountingType;
 
-    /**
+	public BillItem(String name, int PLU, BigDecimal amount, BigDecimal quantity, BigDecimal unitPrice, BigDecimal vat, BigDecimal accountingType) {
+		nameOfBillItem = name;
+		idPlu = PLU;
+		this.amount = amount;
+		this.quantity = quantity;
+		this.unitPrice = unitPrice;
+		this.vat = vat;
+		this.accountingType = accountingType;
+	}
+
+	public BillItem() {
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
      * Gets the value of the amount property.
      * 
      * @return

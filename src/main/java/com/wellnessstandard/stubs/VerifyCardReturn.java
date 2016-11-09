@@ -194,8 +194,8 @@ public class VerifyCardReturn {
 
 	@Override
 	public String toString() {
-		return "VerifyCardReturn [validCard=" + validCard + ", blockedAccount=" + blockedAccount
-				+ ", uncontrolledAccount=" + uncontrolledAccount + ", fullCredit=" + fullCredit + ", exhaustedCredit="
-				+ exhaustedCredit + ", freeCredit=" + freeCredit + ", accommodateGuest=" + accommodateGuest + "]";
+		return "\nVerifyCardReturn [validCard=" + validCard + ",\n blockedAccount=" + blockedAccount
+				+ ",\n uncontrolledAccount=" + uncontrolledAccount + ",\n fullCredit=" + fullCredit + ",\n exhaustedCredit="
+				+ exhaustedCredit + ",\n freeCredit=" + freeCredit + ",\n accommodateGuest=" + accommodateGuest + "]";
 	}
 }
