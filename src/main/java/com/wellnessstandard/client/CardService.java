@@ -22,4 +22,6 @@ public interface CardService {
 	 * @return int
 	 */
 	public int sendBillCard(long myId, long yourId,String cardNumber, Bill bill);
+	
+	public int getVersion();
 }

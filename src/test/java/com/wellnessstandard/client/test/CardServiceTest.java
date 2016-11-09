@@ -37,4 +37,10 @@ public class CardServiceTest {
 		int response = cardService.sendBillCard(11, 22, "207438975",new Bill());
 		Assert.assertEquals(0,response);
 	}
+	
+	@Test
+	public void getVersionTest(){
+		int response = cardService.getVersion();
+		Assert.assertEquals(1,response);
+	}
 }
