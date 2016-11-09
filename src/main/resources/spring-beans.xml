@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="wellnessStandardService" class="org.springframework.remoting.jaxws.JaxWsPortProxyFactoryBean">
+		<property name="serviceInterface" value="com.wellnessstandard.stubs.WellnessStandardWellnessServiceSoap" />
+		<property name="wsdlDocumentUrl" value="http://192.108.125.136/icard_test/WellnessStandardWellnessService.asmx?WSDL" />
+		<property name="namespaceUri" value="http://wellness.wellnessStandard.assol.sk" />
+		<property name="serviceName" value="WellnessStandardWellnessService" />
+		<property name="portName" value="WellnessStandardWellnessServiceSoap" />
+	</bean>
+	
+	<bean id="cardServiceClient" class="com.wellnessstandard.client.CardServiceClient">
+		<property name="wellnessStandardWellnessServiceSoap" ref="wellnessStandardService"/>
+	</bean>
+
+</beans>
